@@ -13,7 +13,8 @@
             font-family: "Poppins", sans-serif;
         }
        .container{
-        background-color: rgb(242, 240, 240);
+        width: 1180px;
+        margin: 0 auto;
        }
        nav{
         height: 80px;
@@ -55,24 +56,293 @@
         margin-top: 20px;
 
       }
+
+      .dropdown-main{
+       
+        position: relative;
+      }
+      .dropdown{
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        visibility: hidden;
+      }
+      .dropdown-main:hover .dropdown{
+        visibility: visible;
+        background-color: #f3f6fa;
+        border-radius: 20px;
+      }
+      .dropdown li{
+        display: block;
+      }
+      
+      .main{
+        background: url("images/images/slider3.jpg") no-repeat center/cover;
+        padding: 150px 0px;
+        
+      }
+      .main-text{
+        width: 60%;
+        
+      }
+      .main-text h1{
+        font-size: 45px;
+        text-transform: capitalize;
+      }
+      .main-text h1 span{
+        color: #1A76D1;
+      }
+      .main-text p{
+        margin-bottom: 30px;
+        margin-top: -10px;
+
+      }
+      .main-text button{
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        padding: 10px 30px;
+        margin-left: 10px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+      }
+      .main-text .button-1{
+       background-color: #1A76D1;
+      }
+      .main-text .button-2{
+        background-color: black;
+      }
+
+      .slide-overflow .child-a{
+        height: 270px;
+        width: 300px;
+        background-color:#1A76D1;
+        display: inline-block;
+        padding: 30px;
+        margin-left: 20px;
+        border-radius: 10px;
+        color: white;
+      }
+      .slide-overflow .child-a h4{
+        font-size: 22px;
+      }
+      .slide-overflow .child-a a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+      }
+      .slide-overflow{
+        padding-top: 70px;
+        padding-bottom: 20px;
+      }
+      .child-a:hover{
+        box-shadow: 0px 10px 20px #8D8E92;
+        margin-top: -10px;
+      }
+      .text-1{
+        text-align: center;
+        margin-top: 100px;
+       
+      }
+      .text-1 h2{
+        font-size: 35px;
+        font-family: "Roboto", sans-serif;
+        color: #2C2D3F;
+      }
+      .text-1 p{
+        color: #888;
+      }
+      .cdn-section{
+        max-width: 33%;
+        display: inline-block;
+        margin: 80px 0px;
+        text-align: center;
+        
+      }
+      
+      .cdn-section i{
+        width: 100px;
+        height: 100px;
+        color: #1A76D1;
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+        font-size: 35px;
+        
+      }
+      .cdn-section h3{
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+      }
+      .cdn-section p{
+        color: #888;
+      }
+      .cdn-section:hover i{
+        background-color: #1A76D1;
+        color: white;
+        transition: ;
+        border: none;
+      }
+      .services p{
+        border: 1px solid #C7DCFB;
+        width: 100px;
+        text-align: center;
+        border-radius: 15px;
+        margin: 0 auto;
+        color: #8D8E92;
+        
+      }
+      .services h1{
+        color: #1B2C51;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+      }
+      .boxes .row-1 .box-1{
+        background-color: #EFF5FF;
+        max-height: px;
+        max-width: 25%;
+        display: inline-block;
+        padding: 48px;
+        margin: 40px 10px;
+        border-radius: 15px;
+      }
+      .boxes .row-1 .box-1:hover{
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, .08);
+        margin-top: -10px;
+      }
+      .boxes .row-1 .box-1 i{
+        height: 65px;
+        width: 65px;
+        background-color: #fff;
+        font-size: 30px;
+        color: #0463FA;
+        border-radius: 50%;
+        
+      }
+
     </style>
 </head>
 <body>
-   <div class="container">
-    <nav>
+  <nav>
+    <div class="container">
       <img src="images/images/logo.png" alt="">
-      <ul>
-          <li> <a href="">Home</a></li>
-          <li> <a href="">Doctors</a></li>
-          <li> <a href="">Services</a></li>
-          <li> <a href="">Pages</a></li>
-          <i class="fa-solid fa-angle-down"></i>
-          <li> <a href="">Blogs</a></li>
-          <i class="fa-solid fa-angle-down"></i>
-          
-      </ul>
-      <a href="#"><button>Book Appointment</button> </a>
-     </nav>
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li> <a href="">Doctors</a></li>
+            <li> <a href="">Services</a></li>
+            <li class="dropdown-main"> 
+              <a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="">dropdown-1</a></li>
+                <li><a href="">dropdown-2</a></li>
+                <li><a href="">dropdown-3</a></li>
+                <li><a href="">dropdown-4</a></li>
+                <li><a href="">dropdown-5</a></li>
+              </ul>
+            </li>
+            <li> <a href="">Blogs <i class="fa-solid fa-angle-down"></i></a></li>
+        </ul>
+    <a href="#"><button>Book Appointment</button> </a>
+    </div>
+   </nav>
+   <div class="slide">
+    <section class="main">
+      <div class="container">
+        <div class="main-text">
+          <h1>We provide <span>medical</span> services that you can <span>trust!</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+          <button class="button-1">Get Appointment</button>
+          <button class="button-2">Contact</button>
+        </div>
+      </div>
+     </section>
+     <section class="slide-overflow">
+      <div class="container">
+        <div class="child-a">
+          <span>Lorem Amit</span>
+          <h4>Emergency Cases</h4>
+          <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+          <a href="">Learn more</a>
+        </div>
+        <div class="child-a">
+          <span>Fusce Porttitor </span>
+          <h4>Doctors Timetable</h4>
+          <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+          <a href="">Learn more</a>
+        </div>
+        <div class="child-a">
+          <span>Donec luctus</span>
+          <h4>Opening Hours</h4>
+          <p>
+            Monday - Fridayp 8.00-20.00
+            Saturday 9.00-18.30
+            Monday - Thusday 9.00-15.00
+        </p>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+     </section>
    </div>
+   <section class="text-1">
+    <div class="container">
+      <h2>We Are Always Ready to Help You & <br>Your Family</h2>
+      <img src="images/images/section-img.png" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. <br> pretiumts</p>
+    </div>
+   </section>
+
+   <section class="cdn">
+      <div class="container">
+        <div class="cdn-section">
+          <i class="fa fa-ambulance"></i>
+          <h3>Emergency help</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+        <div class="cdn-section">
+          <i  class="fa fa-x-ray" ></i>
+          <h3>Enriched pharmecy</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+        <div class="cdn-section">
+          <i class="fa fa-stethoscope"></i>
+          <h3>Medical treatment</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+      </div>
+   </section>
+   
+   
+
+
+
+   <div class="services">
+    <p>Services</p>
+    <h1>Health Care Solution</h1>
+    
+   </div>
+   <div class="boxes">
+    <div class="row-1">
+      <div class="box-1">
+        <i class="fa fa-heartbeat"></i>
+        <h1>Cardiology</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora tempore nulla nemo perferendis mollitia saepe recusandae? Debitis, magni atque.</p>
+        <i class="fa fa-plus"></i>
+      </div>
+      <div class="box-1">
+        <i class="fa fa-x-ray"></i>
+        <h1>Pulmonery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora tempore nulla nemo perferendis mollitia saepe recusandae? Debitis, magni atque.</p>
+        <i class="fa fa-plus"></i>
+      </div>
+      <div class="box-1">
+        <i class="fa fa-brain"></i>
+        <h1>Neurology</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora tempore nulla nemo perferendis mollitia saepe recusandae? Debitis, magni atque.</p>
+        <i class="fa fa-plus"></i>
+      </div>
+    </div>
+    <div class="row-2"></div>
+  </div>
+   
 </body>
 </html>
